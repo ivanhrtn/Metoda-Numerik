@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_excel("C:\\Users\\nadya putri\\Downloads\\data hujan pisah tahun.xlsx", sheet_name = r'Sheet2')
+data = pd.read_excel("C:\\Users\\ASUS\\Downloads\\data hujan pisah tahun.xlsx", sheet_name = r'Sheet2')
 curah = np.array(pd.DataFrame(data, columns = ['Curah Hujan']));C1=float(sum(curah))
 hari = np.array(pd.DataFrame(data, columns = ['Hari Hujan']));H1=float(sum(hari))
 n=len(curah);curah_bar=C1/n; hari_bar=H1/n
